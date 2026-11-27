@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking System</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <main class="booking-page">
+        <section class="booking-card">
+
+            <header class="page-header">
+                <span class="eyebrow">QUICK • SIMPLE • EASY</span>
+                <h1>Ticket Booking</h1>
+                <p class="subtitle">
+                    Choose your seats and confirm your booking.
+                </p>
+            </header>
+
+            <section class="booking-layout">
+
+                <div class="seat-area">
+
+                    <div class="screen-wrap">
+                        <div class="screen"></div>
+                        <span class="screen-label">SCREEN THIS WAY</span>
+                    </div>
+
+                    <div class="seat-grid">
+
+                        <div class="seat-row">
+                            <div class="square" title="Seat 1"></div>
+                            <div class="square" title="Seat 2"></div>
+                            <div class="square" title="Seat 3"></div>
+                            <div class="square" title="Seat 4"></div>
+                            <div class="square" title="Seat 5"></div>
+                            <div class="square" title="Seat 6"></div>
+                        </div>
+
+                        <div class="seat-row">
+                            <div class="square" title="Seat 7"></div>
+                            <div class="square" title="Seat 8"></div>
+                            <div class="square" title="Seat 9"></div>
+                            <div class="square" title="Seat 10"></div>
+                            <div class="square" title="Seat 11"></div>
+                        </div>
+
+                        <div class="seat-row">
+                            <div class="square" title="Seat 12"></div>
+                            <div class="square" title="Seat 13"></div>
+                            <div class="square" title="Seat 14"></div>
+                            <div class="square" title="Seat 15"></div>
+                        </div>
+
+                        <div class="seat-row">
+                            <div class="square" title="Seat 16"></div>
+                            <div class="square" title="Seat 17"></div>
+                            <div class="square" title="Seat 18"></div>
+                        </div>
+
+                        <div class="seat-row">
+                            <div class="square" title="Seat 19"></div>
+                            <div class="square" title="Seat 20"></div>
+                        </div>
+
+                        <div class="seat-row">
+                            <div class="square" title="Seat 21"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="legend">
+                        <span>
+                            <i class="legend-seat available"></i>
+                            Available
+                        </span>
+
+                        <span>
+                            <i class="legend-seat selected"></i>
+                            Selected
+                        </span>
+
+                        <span>
+                            <i class="legend-seat booked"></i>
+                            Booked
+                        </span>
+                    </div>
+
+                </div>
+
+                <aside class="instructions">
+
+                    <div class="info-icon">✦</div>
+
+                    <h2>How to book</h2>
+
+                    <ol>
+                        <li>Click a seat to select it.</li>
+                        <li>Double-click a seat to unselect it.</li>
+                        <li>Press <strong>Book Seat</strong> to confirm selected seats.</li>
+                    </ol>
+
+                    <div class="tip">
+                        <strong>Quick tip</strong>
+                        <p>
+                            Green seats are booked. Grey seats are selected
+                            and ready to book.
+                        </p>
+                    </div>
+
+                </aside>
+
+            </section>
+
+            <footer class="booking-footer">
+
+                <div class="action-copy">
+                    <h2>Ready to book?</h2>
+                    <p>Manage your seat selection below.</p>
+                </div>
+
+                <div class="buttons">
+
+                    <button class="action-button book-button"
+                        type="button" onclick="color()">
+                        <span>✓</span> Book Seat
+                    </button>
+
+                    <button class="action-button cancel-button"
+                        type="button" onclick="cancel()">
+                        <span>↶</span> Cancel
+                    </button>
+
+                    <button class="action-button reset-button"
+                        type="button" onclick="reset()">
+                        <span>⟲</span> Reset
+                    </button>
+
+                </div>
+
+            </footer>
+
+        </section>
+
+        <p class="page-note">
+            Select your seats • Enjoy your show
+        </p>
+
+    </main>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
